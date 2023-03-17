@@ -323,6 +323,11 @@ img {
     color: #3f8ed9;
 }
 
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
 .navbar-nav  li {
     float: none;
     display: inline-block;
@@ -351,13 +356,17 @@ img {
     background: #3f8ed9;
 }
 
+.toggle-lang:hover {
+    transform: scale(1.02);
+}
 
 /* ----------------------------------------------------------------------------------------
 *                               03. Slider area css
 * -------------------------------------------------------------------------------------- */
 
 .slider-area {
-    background: #3f8ed9;
+    background: rgb(63,142,217);
+    background: linear-gradient(90deg, rgba(63,142,217,1) 5%, rgba(31,73,113,1) 100%);
     min-height: 400px;
 }
 
@@ -597,6 +606,14 @@ img {
 
 .service-area {
     padding-bottom: 30px;
+}
+
+.service-area .section-title h2 {
+    margin-bottom: 0;
+}
+
+.service-area .section-title p {
+    margin-top: 5px;
 }
 
 .home-services .service-box {
