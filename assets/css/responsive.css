@@ -126,7 +126,7 @@
     }
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
-        background: #fff;
+        background: var(--gray-600);
     }
     .navbar {
         min-height: 0px;
