@@ -383,8 +383,17 @@ img {
 * -------------------------------------------------------------------------------------- */
 
 .slider-area {
-    background: var(--gray-900);
-    background: linear-gradient(90deg, var(--gray-900) 35%, var(--gray-700) 100%);
+    background-image: url("../img/bg-section/bg-img-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -260px center;
+    min-height: 400px;
+}
+
+.slider-mask {
+    height: 100%;
+    background: rgb(8,6,9);
+    background: linear-gradient(90deg, rgba(8,6,9,0) 4%, rgba(8,6,9,1) 66%);
     min-height: 400px;
 }
 
@@ -403,6 +412,10 @@ img {
 .intro-text {
     text-align: left;
     color: #fff;
+}
+
+.intro-text .row {
+    margin-top: 0px;
 }
 
 .intro-text h1 {
@@ -435,6 +448,7 @@ img {
     .intro-text-box {
         display: table;
         transform: translate(0%, 50%);
+        margin-top: 100px;
     }
 }
 
@@ -453,7 +467,7 @@ img {
 
 @media (max-width: 991px) {
     .intro-text {
-        margin: 80px auto;
+        margin: 77px auto;
         text-align: center;
     }
     .intro-img img {
@@ -624,8 +638,14 @@ img {
 * --------------------------------------------------------------------------------------- */
 
 .service-area {
-    padding-bottom: 30px;
-    background-color: var(--gray-800);
+    background-image: url("../img/bg-section/bg-image-features.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service-mask {
+background: rgb(8,6,9);
+background: linear-gradient(180deg, rgba(8,6,9,1) 41%, rgba(8,6,9,0.8715861344537815) 100%);
 }
 
 .service-area .section-title h2 {
@@ -698,8 +718,34 @@ img {
 
 .screen {
     margin: 0 15px;
+    padding: 20px;
     overflow: hidden;
     text-align: center;
+    min-height: 310px;
+    border-radius: 5px;
+    background: rgb(50,50,56);
+    background: linear-gradient(180deg, rgba(50,50,56,1) 0%, rgba(37,37,41,1) 11%, rgba(10,10,10,1) 73%, rgba(10,10,10,1) 84%);
+    border: solid 2px #3F8ED9;
+    position: relative;
+}
+
+.screen::before {
+    content: '';
+    position: absolute;
+    top: -42px;
+    right: -46px;
+    height: 80px;
+    width: 82px;
+    border-radius: 50%;
+    background-color: var(--green-500);
+}
+
+.screen h3 {
+    font-size: 2rem;
+}
+
+.screen p {
+    font-size: 1.2rem;
 }
 
 
@@ -709,16 +755,27 @@ img {
 /*     Fun Fact Area Css                  */
 /*----------------------------------------*/
 .fun-fact-area {
+    padding-bottom: 50px;
     color: #fff;
     position: relative;
-    background: var(--gray-600);
+}
+
+.fun-fact-area h2 {
+    margin-bottom: 40px;
 }
 
 .fun-fact {
     background: var(--gray-800);
     text-align: center;
     padding: 20px;
+    padding-top: 30px;
     border-radius: 15px;
+    min-height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
 }
 
 .fun-fact i.fa {
@@ -728,6 +785,12 @@ img {
 
 .fun-fact h3 {
     color: inherit;
+}
+
+.also-offer {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* ----------------------------------------------------------------------------------------
@@ -830,13 +893,33 @@ img {
 *                                   09. Why Choose area css
 * --------------------------------------------------------------------------------------- */
 
+.why-choose-area {
+    background-image: url("../img/bg-section/bg-image-why-us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.why-choose-mask {
+    background: rgb(8,6,9);
+background: linear-gradient(180deg, rgba(8,6,9,1) 10%, rgba(8,6,9,0.8827906162464986) 42%, rgba(8,6,9,0.742734593837535) 100%);
+}
+
 .why-choose-area .container {
     max-width: 1000px;
 }
 
+.why-choose-area .row {
+    margin: 30px 0;
+}
+
+
 .choose-box {
     margin-bottom: 30px;
 }
+
+.choose-content .subtitle {
+    margin-top: 0;
+} 
 
 .why-choose-area img {
     width: 100%;
@@ -878,6 +961,38 @@ img {
 }
 
 
+/* ----------------------------------------------------------------------------------------
+*                                9.5 STEPS area css
+* --------------------------------------------------------------------------------------- */
+.steps-grid {
+
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.step-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.step-item p {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.next-step {
+    display: grid;
+    place-items: center;
+    margin: 30px auto;
+}
 
 
 /* ----------------------------------------------------------------------------------------

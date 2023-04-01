@@ -7,6 +7,15 @@
 
 
 /* Medium Layout */
+@media ( max-width: 992px ) {
+    .intro-text .row {
+        margin-top: 100px;
+    }
+
+    .fun-fact {
+        min-height: 217px;
+    }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .home-services .service-box {
@@ -18,6 +27,38 @@
     .navbar-nav {
         flex-direction: column;
         padding-bottom: 5px;
+    }
+
+    .slider-area {
+        background-position: -200px center;
+    }
+
+    .slider-mask {
+        background: linear-gradient(90deg, #08060985 4%, rgba(8,6,9,1) 66%);
+    }
+
+    .also-offer {
+        margin-top: -50px;
+    }
+
+    .why-choose-area .section-title {
+        margin-bottom: 0;
+    }
+
+    .why-choose-area .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .choose-box.right, .choose-box.left {
+        text-align: center;
+    }
+
+    .why-choose-area img {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto 30px auto;
     }
 }
 
@@ -208,9 +249,6 @@
         margin-bottom: 50px;
     }
 
-    .choose-box.left {
-        text-align: left;
-    }
     .choose-box.left i.fa {
         float: left;
         margin-left: 0;
