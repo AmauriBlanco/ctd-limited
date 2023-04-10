@@ -329,8 +329,7 @@ img {
 }
 
 .img-logo{
-    height: 50px;
-    filter: grayscale(80%) !important;
+    height: 55px;
 }
 
 
@@ -366,6 +365,7 @@ img {
     float: left;
     padding: 5px;
     line-height: normal;
+    height: 55px;
 }
 
 
