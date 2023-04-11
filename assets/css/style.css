@@ -1250,6 +1250,7 @@ background: linear-gradient(180deg, rgba(8,6,9,1) 10%, rgba(8,6,9,0.882790616246
 }
 
 .address {
+    min-height: 327px;
     padding: 30px;
     background: var(--gray-700);
     border-radius: 10px;
