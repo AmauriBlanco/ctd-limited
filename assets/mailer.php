@@ -21,10 +21,10 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "amandrd05@gmail.com";
+        $recipient = "ctdunlimited@gmail.com";
 
         // Set the email subject.
-        $subject = "New contact from Applan";
+        $subject = "New contact from CTD Web site";
 
         // Build the email content.
         $email_content = "Name: $name\n";
