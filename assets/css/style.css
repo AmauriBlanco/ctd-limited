@@ -638,7 +638,7 @@ img {
 * --------------------------------------------------------------------------------------- */
 
 .service-area {
-    background-image: url("../img/bg-section/bg-image-features.jpg");
+    background-image: url("../img/bg-section/bg-image-features.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
