@@ -530,16 +530,19 @@
 
                             <div class="panel clearfix">
                                 <div class="panel-heading">
-                                    <a href="#accordion01" data-toggle="collapse" data-parent="#accordion"
-                                        aria-expanded="true" class="">
+                                    <a id="bnt1" href="#accordion01" data-toggle="collapse" data-parent="#accordion"
+                                        aria-controls="question1"
+                                        >
                                         <i class="fa fa-minus"></i>
-                                        <h3 class="panel-title" aria-label="What an IT Consultant Does for my company?">
+                                        <h3 id="question1" class="panel-title"  aria-label="What an IT Consultant Does for my company?">
                                             What an IT Consultant Does
                                             for my company?</h3>
                                     </a>
                                 </div>
                                 <div id="accordion01" class="panel-collapse collapse in"
-                                    aria-expanded="true">
+                                    aria-expanded="true"
+                                    aria-labelledby="bnt1" role="region"
+                                    >
                                     <div class="panel-body">
                                         <p
                                             aria-label="Description of the role of an IT consultant in optimizing a company's IT systems and infrastructure.">
@@ -566,7 +569,7 @@
                             <div class="panel clearfix">
                                 <div class="panel-heading">
                                     <a href="#accordion02" class="collapsed" data-toggle="collapse"
-                                        data-parent="#accordion" aria-expanded="false">
+                                        data-parent="#accordion" aria-expanded="false" aria-controls="question2" id="bnt2">
                                         <i class="fa fa-minus"></i>
                                         <h3 class="panel-title" aria-label="How long does it take to be ready?">How long
                                             does it take to be ready?
@@ -574,7 +577,8 @@
                                     </a>
                                 </div>
                                 <div id="accordion02" class="panel-collapse collapse"
-                                    aria-expanded="false" style="height: 0px;">
+                                    aria-expanded="false"
+                                    aria-labelledby="bnt2" role="region" style="height: 0px;">
                                     <div class="panel-body">
                                         <p
                                             aria-label="Description of how the delivery time of a software solution can vary based on project type, scope, and resource availability.">
@@ -587,35 +591,40 @@
                                 </div>
                             </div>
 
-                            <div class="panel clearfix" aria-labelledby="accordion03-heading">
+                            <div class="panel clearfix">
                                 <div class="panel-heading" id="accordion03-heading">
                                     <a href="#accordion03" class="collapsed" data-toggle="collapse"
-                                        data-parent="#accordion" aria-expanded="false" aria-controls="accordion03">
+                                        data-parent="#accordion" aria-expanded="false" aria-controls="question3" id="bnt3">
                                         <i class="fa fa-minus"></i>
                                         <h3 class="panel-title">How much does the investment cost?</h3>
                                     </a>
                                 </div>
                                 <div id="accordion03" class="panel-collapse collapse" 
-                                    aria-labelledby="accordion03-heading">
+                                    aria-expanded="false"
+                                    aria-labelledby="bnt3" role="region"
+                                    >
                                     <div class="panel-body">
-                                        Since each software project is unique, we price each project based on its
-                                        complexity, scope, and delivery
-                                        date requirements. Please contact us for a personalized assessment of your
-                                        project.
+                                        <p>
+                                            Since each software project is unique, we price each project based on its
+                                            complexity, scope, and delivery
+                                            date requirements. Please contact us for a personalized assessment of your
+                                            project.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="panel clearfix" aria-labelledby="accordion04-heading">
+                            <div class="panel clearfix">
                                 <div class="panel-heading"  id="accordion04-heading">
                                     <a href="#accordion04" class="collapsed" data-toggle="collapse"
-                                        data-parent="#accordion" aria-expanded="false" aria-controls="accordion04">
+                                        data-parent="#accordion" aria-controls="question4" id="bnt4">
                                         <i class="fa fa-minus"></i>
                                         <h3 class="panel-title">What technologies are used?</h3>
                                     </a>
                                 </div>
                                 <div id="accordion04" class="panel-collapse collapse" 
-                                    aria-labelledby="accordion04-heading">
+                                   aria-expanded="false"
+                                    aria-labelledby="bnt4" role="region">
                                     <div class="panel-body">
                                         We have experience with several front-end and back-end technologies, including
                                         but not limited to .NET,
